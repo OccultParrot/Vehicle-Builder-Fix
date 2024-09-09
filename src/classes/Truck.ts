@@ -56,7 +56,7 @@ class Truck extends Vehicle implements AbleToTow{
 
   override printDetails(): void {
     super.printDetails();
-    console.log(`${this.year} ${this.make} ${this.model}\nVin: ${this.vin}\nWeight ${this.weight} lbs\nTop Speed: ${this.topSpeed}\nColor: ${this.color}\nTowing Capacity: ${this.towingCapacity}\nWheels: ${this.wheels.forEach((wheel) => {console.log( wheel.getTireBrand, wheel.getDiameter)})}`);
+    console.log(`${this.year} ${this.make} ${this.model}\nVin: ${this.vin}\nWeight ${this.weight} lbs\nTop Speed: ${this.topSpeed}\nColor: ${this.color}\nTowing Capacity: ${this.towingCapacity}\nWheels: ${this.wheels.forEach((wheel, index) => {console.log(wheel.getTireBrand, wheel.getDiameter)})}`);
   }
 }
 
