@@ -362,11 +362,14 @@ class Cli {
           }
         } else if (answers.action === 'Wheelie') {
           for (let i = 0; i < this.vehicles.length; i++) {
-            if (typeof this.vehicles[i] === typeof Motorbike) {
-              (this.vehicles[i] as Motorbike).Wheelie();
-              break;
-            } else {
-              console.error("Selected vehicle is NOT a vehicle capable of doing a wheelie!")
+            if (this.vehicles[i].vin == this.selectedVehicleVin)
+            {
+              if (this.vehicles[i] instanceof Motorbike) {
+                (this.vehicles[i] as Motorbike).Wheelie();
+                break;
+              } else {
+                console.error("Selected vehicle is NOT a vehicle capable of doing a wheelie!")
+              }
             }
           }
         }
