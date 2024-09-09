@@ -15,6 +15,8 @@ A fix to an existing project, making the project function as requested
             
 The existing project had a lot of unfinished `TODO`s that needed finishing so that the application would function. After finishing all the `TODO`s, the application works as expected!
 
+Walkthrough of installation and usage is [here](https://youtu.be/07lNsUuROpE)
+
 ## License
 To view license, click [here](LICENSE)
 
